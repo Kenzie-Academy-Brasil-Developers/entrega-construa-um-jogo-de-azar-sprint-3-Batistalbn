@@ -16,61 +16,37 @@
         <h1>Jokenpô</h1>
     </header>
     <main class="principal">
-        <article class="jogo">
-            <section class="jogo__player">
-                <div id="Player">
-                    <h4>Jogador</h4>
-                </div>
-                <ul>
-                    <li id="player-pedra">
-                        <figure>
-                            <img class="pedra" src="img/pedra.png" alt="Mão fechada">
-                            <figcaption>Pedra</figcaption>
-                        </figure>
-                    </li>
-                    <li id="player-papel">
-                        <figure>
-                            <img class="papel" src="img/papel.png" alt="Mão aberta">
-                            <figcaption>Papel</figcaption>
-                        </figure>
-                    </li>
-                    <li id="player-tesoura">
-                        <figure>
-                            <img class="tesoura" src="img/tesoura.png" alt="Mão com 2 dedos levantado">
-                            <figcaption>Tesoura</figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </section>
-            <p>VS</p>
-            <section class="jogo__computer">
-                <div id="Computer">
-                    <h4>Computador</h4>
-                </div>
-                <ul>
-                    <li id="computer-pedra">
-                        <figure>
-                            <img class="pedra" src="img/pedra.png" alt="Mão fechada">
-                            <figcaption>Pedra</figcaption>
-                        </figure>
-                    </li>
-                    <li id="computer-papel">
-                        <figure>
-                            <img class="papel" src="img/papel.png" alt="Mão aberta">
-                            <figcaption>Papel</figcaption>
-                        </figure>
-                    </li>
-                    <li id="computer-tesoura">
-                        <figure>
-                            <img class="tesoura" src="img/tesoura.png" alt="Mão com 2 dedos levantado">
-                            <figcaption>Tesoura</figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </section>
+        <article class="jogo" id="jogo">
+            <div class="jogo__textWin" id="jogoTextWin">
+                <h2 id="textWin"></h2>
+            </div>
+            <div class="jogo__tela" id="jogoTela">
+                <section class="jogo__player">
+                    <div id="Player">
+                        <h4>Jogador</h4>
+                    </div>
+                    <div class="jogo__player__escolha">
+                        <img id="player-pedra" src="img/pedra.png" alt="pedra">
+                        <img id="player-papel" src="img/papel.png" alt="papel">
+                        <img id="player-tesoura" src="img/tesoura.png" alt="tesoura">
+                    </div>
+                </section>
+                <p>VS</p>
+                <section class="jogo__computer">
+                    <div id="Computer">
+                        <h4>Computador</h4>
+                    </div>
+                    <div class="jogo__computer__escolha">
+                        <img id="computer-pedra" src="img/pedra.png" alt="pedra">
+                        <img id="computer-papel" src="img/papel.png" alt="papel">
+                        <img id="computer-tesoura" src="img/tesoura.png" alt="tesoura">
+                    </div>
+                </section>
+            </div>
+           
         </article>
         
     </main>
-    <script src="./assents/javascript/jokenpo.js"></script>
+    <script src="./assents/javascript/jokempo.js"></script>
 </body>
 </html>
