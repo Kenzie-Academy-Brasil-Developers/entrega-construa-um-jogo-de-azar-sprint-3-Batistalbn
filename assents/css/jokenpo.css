@@ -124,7 +124,7 @@ body {
 @media screen and (min-width: 800px) {
     body{
         justify-content: center;
-        background-image: url('/img/jaken_kakashi_e_gai.gif');
+        background-image: url('../img/jaken_kakashi_e_gai.gif');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100vw;
