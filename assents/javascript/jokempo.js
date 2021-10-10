@@ -62,9 +62,13 @@ function partida(escolhaJogador, computer) {
     } else {
         text = "Empatou!!"
         mostraTexto.innerText = text 
-        setTimeout(() => {mostraTexto.innerText = ''} , 1000)
+        setTimeout(() => {mostraTexto.innerText = ''} , 3000)
 
     }
+        setTimeout(() => {limpaBorda()}, 3000)
+}
+
+function limpaBorda() {
     tesouraComputer.style.border = "none";
     papelComputer.style.border = "none";
     pedraComputer.style.border = "none";
@@ -93,12 +97,12 @@ function vitoria(cond) {
     if (cond) {
         text = "Você venceu!!"
         mostraTexto.innerText = text 
-        setTimeout(() => {mostraTexto.innerText = ''} , 1000)
+        setTimeout(() => {mostraTexto.innerText = ''} , 3000)
 
     } else {
         text = "Você perdeu!!"
         mostraTexto.innerText = text 
-        setTimeout(() => {mostraTexto.innerText = ''} , 1000)
+        setTimeout(() => {mostraTexto.innerText = ''} , 3000)
 
     } 
 }
@@ -114,11 +118,17 @@ function resetGame() {
     
 }
 
+function playAudio(){
+    const audio = document.querySelector('audio')
+    audio.play()
+}
+
 function jogo(evt) {
     let escolhaJogador = evt.target.id
-    let computer = escolhaComputer();
+    playAudio()
+    let computer = setTimeout(() => {escolhaComputer()}, 3000) ;
     selecaoComputer()
-    setTimeout(() => {partida(escolhaJogador, computer)}, 1000);
+    setTimeout(() => {partida(escolhaJogador, computer)}, 4000);
 }
 
 player.forEach((li) => li.addEventListener('click', jogo));
